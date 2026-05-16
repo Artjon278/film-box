@@ -1,0 +1,22 @@
+# Config with real credentials — never commit!
+includes/config.php
+includes/config.local.php
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Backups
+*.bak
+*.sql.bak
+
+# Dependency dirs (we don't use composer for this project, but just in case)
+vendor/
+node_modules/
