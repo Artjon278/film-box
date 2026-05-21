@@ -16,10 +16,10 @@ $genres      = $api_key_missing ? [] : tmdb_genres();
 $tmdb_err    = tmdb_last_error();
 
 $spotlight     = !empty($trending) ? $trending[0] : null;
-$trending_rest = !empty($trending) ? array_slice($trending, 1, 8) : [];
-$top_rated_six = array_slice($top_rated, 0, 6);
-$in_theaters   = array_slice($now_playing, 0, 6);
-$coming_soon   = array_slice($upcoming, 0, 6);
+$trending_rest = !empty($trending) ? array_slice($trending, 1, 14) : [];
+$top_rated_six = array_slice($top_rated, 0, 12);
+$in_theaters   = array_slice($now_playing, 0, 12);
+$coming_soon   = array_slice($upcoming, 0, 12);
 
 // --- Spotlight trailer (one extra TMDb call) ---
 $spotlight_trailer = null;
