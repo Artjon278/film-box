@@ -8,7 +8,7 @@ $user = current_user();
 $api_key_missing = (TMDB_API_KEY === 'PUT_YOUR_TMDB_API_KEY_HERE' || TMDB_API_KEY === '');
 
 // --- TMDb data ---
-$trending    = $api_key_missing ? [] : tmdb_trending('week');
+$trending    = $api_key_missing ? [] : tmdb_trending('day');
 $top_rated   = $api_key_missing ? [] : tmdb_top_rated();
 $now_playing = $api_key_missing ? [] : tmdb_now_playing();
 $upcoming    = $api_key_missing ? [] : tmdb_upcoming();
